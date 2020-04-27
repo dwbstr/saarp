@@ -1,0 +1,46 @@
+---
+title: "Shiny Application and Reproducible Pitch"
+author: "Damian E. W. Amegashie"
+date: "April 27, 2020"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Course Project
+
+- This is the final course project for Data Products Course
+- The Project's objective is to create a shiny application
+- I have chosen to create a Calories Calculator application.
+
+## Calories Calculator
+
+- Takes in the input as amount of fats, protien and carbs taken (in grams)
+- Based on the above information the application calculates the Calories using following formulae:
+- Calories = 9 * (gms of fats) + 4 * (gms of protien) + 4 * (gms of carbs)
+
+
+
+## R code embedded in the slide
+
+- Input defined are amount of fats, protien and carbs taken (in grams)
+- Calculation of Calories
+
+```{r echo=TRUE}
+protien_gms <- 10
+fat_gms <- 10
+carbs_gms <- 10
+
+total_calories <- fat_gms * 9.0 + protien_gms * 4.0 + carbs_gms * 4.0
+
+total_calories
+```
+
+## The Shiny Application
+- The application can be found at:
+https://dwebster.shinyapps.io/product/
+
+- The source code can be found at:
+https://github.com/dwbstr/saarp.git
